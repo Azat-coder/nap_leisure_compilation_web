@@ -1,12 +1,17 @@
 $main-background: #ffffff;
 
-@import "fonts.scss";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
 
-$ubuntuRegular: 'ubunturegular', Arial, sans-serif;
+$manrope: 'Manrope', sans-serif;
 
 body {
-  font-family: $ubuntuRegular;
+  font-family: $manrope;
   background-color: $main-background;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
 }
 
 @import "header.scss";
