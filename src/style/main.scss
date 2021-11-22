@@ -1,8 +1,79 @@
 $main-background: #ffffff;
 
+@import "normalize.scss";
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
 
 $manrope: 'Manrope', sans-serif;
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+:focus {
+  outline: none;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+textarea {
+  resize: none;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
 
 body {
   font-family: $manrope;
@@ -14,4 +85,178 @@ body {
   margin: 0 auto;
 }
 
-@import "header.scss";
+.header {
+  background-color: #000000;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    letter-spacing: 0.875px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 0 120px;
+    margin-bottom: 160px;
+    position: relative;
+    &::before {
+      content: '';
+      background-image: url(../img/undertitle_1.png);
+      background-position: bottom right;
+      background-repeat: no-repeat;
+      position: absolute;
+      display: block;
+      width: 260px;
+      height: 196px;
+      top: 141px;
+      right: 153px;
+      z-index: 1;
+    }
+  }
+}
+
+.greetings {
+  padding: 0 100px;
+  padding-right: 103px;
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 38px;
+    letter-spacing: 0.6875px;
+    color: #000000;
+    text-align: left;
+    padding-top: 120px;
+    margin-bottom: 60px;
+  }
+  &__text-primary {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 0.4375px;
+    color: #000000;
+    margin-bottom: 45px;
+  }
+  &__text-secondary {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 0.4375px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 45px;
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 105px;
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 276px;
+    height: 86px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 34px;
+    text-align: center;
+    color: #000000;
+    background: #F5F5F5;
+    border-radius: 50px;
+    margin-right: 22px;
+    &:first-child {
+      margin-bottom: 22px;
+    }
+    &--last {
+      min-width: 309px;
+    }
+  }
+}
+.music {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headphones {
+  background: url(../img/headphones.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 793px;
+  height: 742px;
+  margin-bottom: 30px;
+  padding: 0 53px;
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: 0.6875px;
+    color: #FFFFFF;
+    padding: 0 230px;
+    padding-top: 196px;
+    padding-bottom: 30px;
+  }
+  &__text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.3125px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    padding: 0 260px;
+  }
+}
+
+.polinamusic {
+  background: #36E565;
+  box-shadow: inset 0px 1px 3px rgba(255, 255, 255, 0.5);
+  border-radius: 30px;
+  width: 793px;
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: 0.6875px;
+    color: #FFFFFF;
+    padding-top: 44px;
+    margin-bottom: 12px;
+  }
+  &__text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.3125px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    margin-bottom: 70px;
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 83px;
+  }
+}
