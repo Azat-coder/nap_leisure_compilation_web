@@ -1,7 +1,8 @@
 $main-background: #ffffff;
 
-@import "normalize.scss";
+@import "./normalize.scss";
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap');
+@import "fm.revealator.jquery.scss";
 
 $manrope: 'Manrope', sans-serif;
 
@@ -179,6 +180,29 @@ body {
     background: #F5F5F5;
     border-radius: 50px;
     margin-right: 22px;
+    box-shadow: none;
+    transition: all 0.5s;
+    position: relative;
+    &:before {
+      content:'';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 86px;
+      background: rgba(255,255,255,0.3);
+      border-radius: 5px;
+      transition: all 2s ease;
+    }
+    &:hover:before {
+      width: 100%;
+    }
+    &:hover {
+      background: #dfdfdf;
+    }
+    &:active {
+      box-shadow: inset 0px 3px 2px rgba(0, 0, 0, 0.5);
+    }
     &:first-child {
       margin-bottom: 22px;
     }
@@ -272,10 +296,23 @@ body {
     display: flex;
     justify-content: center;
     margin-bottom: 83px;
+    position: relative;
   }
   &__appleicon {
     margin-bottom: 40px;
   }
+  &__hammer {
+    background-color: #36E565;
+    height: 100%;
+    width: 30px;
+    position: absolute;
+    transition: all 3s;
+    left: -30px;
+  }
+}
+
+.polinamusic__button:hover .polinamusic__hammer {
+  transform: translateX(2100%);
 }
 
 .person {
@@ -322,6 +359,16 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+  }
+  &__play-button {
+    transition: all 0.5s;
+    border-radius: 50%;
+  }
+  &__play-button:hover,
+  &__play-button:focus {
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    transform: scale(1.1);
   }
 }
 
@@ -403,6 +450,16 @@ body {
   min-width: 158px;
   display: flex;
   justify-content: space-between;
+  &__button {
+    transition: all 0.5s;
+    border-radius: 50%;
+  }
+  &__button:hover,
+  &__button:focus {
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    border-radius: 50%;
+  }
 }
 
 .books {
@@ -598,6 +655,13 @@ body {
     padding: 16px 0px;
     width: 190px;
     margin-bottom: 80px;
+    transition: all 0.5s;
+  }
+  &__btn:hover,
+  &__btn:focus {
+    background: #FFFFFF;
+    color: #1B1B1B;
+    box-shadow: inset 0px 3px 2px rgba(0, 0, 0, 0.8);
   }
 }
 
@@ -661,6 +725,12 @@ body {
     padding: 16px 0px;
     width: 190px;
     margin-bottom: 80px;
+    transition: all 0.5s;
+  }
+  &__btn:hover {
+    background: #FFFFFF;
+    color: #1B1B1B;
+    box-shadow: inset 0px 3px 2px rgba(0, 0, 0, 0.8);
   }
 }
 
@@ -713,5 +783,714 @@ body {
   }
   &__logo {
     margin-bottom: 85px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 740px;
+    margin: 0 auto;
+  }
+  .header {
+    padding-top: 60px;
+    &__logo {
+      margin-bottom: 60px;
+    }
+    &__title {
+      font-size: 55px;
+      padding: 0 60px;
+      margin-bottom: 100px;
+      &::before {
+        top: 30px;
+        right: 173px;
+        background-size: 50%;
+      }
+    }
+  } 
+  .greetings {
+    &__container {
+      width: 640px;
+    }
+    &__title {
+      font-size: 42px;
+      line-height: 28px;
+      padding-top: 80px;
+      margin-bottom: 50px;
+    }
+    &__text-primary {
+      font-size: 28px;
+      line-height: 36px;
+      margin-bottom: 35px;
+    }
+    &__text-secondary {
+      font-size: 28px;
+      line-height: 36px;
+      margin-bottom: 35px;
+    }
+  }
+  
+  .nav {
+    &__list {
+      margin-bottom: 0px;
+    }
+    &__link {
+      width: 200px;
+      height: 66px;
+      font-size: 28px;
+      &:first-child {
+        margin-bottom: 22px;
+      }
+      &--last {
+        min-width: 220px;
+      }
+    }
+  }
+  .music {
+    &__container {
+      width: 740px;
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
+    &__wrapper {
+      width: 640px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  
+  .headphones {
+    background-size: contain;
+    background-position: center;
+    width: 640px;
+    height: 620px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    &__title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 42px;
+      line-height: 46px;
+      padding: 0 130px;
+      padding-top: 196px;
+      padding-bottom: 30px;
+    }
+    &__text {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 35px;
+      text-align: center;
+      letter-spacing: 0.3125px;
+      color: #FFFFFF;
+      mix-blend-mode: normal;
+      opacity: 0.7;
+      padding: 0 160px;
+    }
+  }
+  
+  .polinamusic {
+    width: 640px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    &__title {
+      font-size: 42px;
+      line-height: 55px;
+      padding-top: 44px;
+      margin-bottom: 8px;
+    }
+    &__text {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 40px;
+    }
+    &__button {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 53px;
+      width: 90%;
+    }
+    &__appleicon {
+      margin-bottom: 30px;
+    }
+    &__hammer {
+      background-color: #36E565;
+      height: 100%;
+      width: 25px;
+      position: absolute;
+      transition: all 3s;
+      left: -25px;
+    }
+  }
+
+  .polinamusic__button:hover .polinamusic__hammer {
+    transform: translateX(2420%);
+  }
+  
+  .person {
+    width: 310px;
+    height: 505px;
+    &__wrapper {
+      padding: 30px;
+    }
+    &__title {
+      font-size: 42px;
+      line-height: 55px;
+      margin-bottom: 8px;
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
+  
+  .podcasts {
+    &__container {
+      width: 640px;
+    }
+    margin-bottom: 60px;
+    &__title {
+      font-size: 42px;
+      line-height: 55px;
+      padding: 0 140px;
+      position: relative;
+      margin-bottom: 65px;
+      &::before {
+        background-size: 60%;
+        top: 181px;
+        left: 220px;
+      }
+    }
+  }
+  
+  .podcast {
+    margin-bottom: 20px;
+    &__wrapper {
+      padding: 40px;
+    }
+    &__top-block {
+      margin-bottom: 45px;
+    }
+    &__name {
+      display: flex;
+    }
+    &__image {
+      margin-right: 35px;
+    }
+    &__title {
+      font-size: 42px;
+      line-height: 55px;
+    }
+    &__text {
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
+  
+  .books {
+    margin-bottom: 60px;
+    &__container {
+      width: 640px;
+    }
+    &__title {
+      font-size: 42px;
+      line-height: 55px;
+      padding: 0 100px;
+      margin-bottom: 50px;
+    }
+    &__undertitle {
+      font-size: 28px;
+      line-height: 35px;
+      padding: 0 80px;
+      margin-bottom: 65px;
+      &::before {
+        background-size: 60%;
+        top: 100px;
+        left: 150px;
+      }
+    }
+  }
+  
+  .book {
+    width: 640px;
+    margin-bottom: 20px;
+    &__title {
+      font-size: 42px;
+      line-height: 55px;
+      padding-left: 40px;
+      padding-top: 30px;
+      margin-bottom: 16px;
+    }
+    &__text {
+      font-size: 22px;
+      line-height: 30px;
+      letter-spacing: 0.375px;
+      padding-left: 40px;
+      padding-bottom: 40px;
+    }
+  }
+  
+  .films {
+    &__container {
+      width: 640px;
+    }
+    &__title {
+      font-size: 42px;
+      line-height: 55px;
+      padding: 0 130px;
+      position: relative;
+      margin-bottom: 30px;
+      &::before {
+        background-size: 60%;
+        top: 0px;
+        right: 90px;
+      }
+    }
+    &__undertitle {
+      font-size: 28px;
+      line-height: 35px;
+      margin-bottom: 30px;
+    }
+  }
+  
+  .film {
+    &__title-block {
+      width: 640px;
+      height: 367px;
+      margin-bottom: 25px;
+      background-size: 100%;
+    }
+    &__title {
+      font-size: 42px;
+      line-height: 55px;
+      padding-top: 34px;
+      padding-left: 40px;
+    }
+    &__time {
+      font-size: 22px;
+      line-height: 30px;
+      margin-bottom: 15px;
+    }
+    &__text {
+      font-size: 22px;
+      line-height: 30px;
+      margin-bottom: 25px;
+    }
+    &__btn {
+      display: block;
+      background: #1B1B1B;
+      border-radius: 27px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      padding: 16px 0px;
+      width: 190px;
+      margin-bottom: 80px;
+      transition: all 0.5s;
+    }
+    &__btn:hover,
+    &__btn:focus {
+      background: #FFFFFF;
+      color: #1B1B1B;
+      box-shadow: inset 0px 3px 2px rgba(0, 0, 0, 0.8);
+    }
+  }
+  
+  .gift {
+    margin-bottom: 60px;
+    &__container {
+      width: 640px;
+    }
+    &__wrapper {
+      background-size: 100%;
+      width: 640px;
+    }
+    &__zoom {
+      padding-top: 60px;
+      margin-bottom: 38px;
+    }
+    &__title {
+      font-size: 42px;
+      line-height: 70px;
+      margin-bottom: 27px;
+    }
+    &__text {
+      font-size: 25px;
+      line-height: 35px;
+      text-align: center;
+      margin-bottom: 183px;
+    }
+  }
+  
+  .resume {
+    &__container {
+      width: 640px;
+    }
+    &__title {
+      font-size: 42px;
+      line-height: 55px;
+      padding: 0 50px;
+      margin-bottom: 35px;
+      &::before {
+        background-size: 80%;
+        top: 120px;
+        left: 280px;
+      }
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 25px;
+      padding: 0 200px;
+      margin-bottom: 50px;
+    }
+    &__logo {
+      margin-bottom: 55px;
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .container {
+    width: 480px;
+  }
+  .header {
+    padding-top: 60px;
+    &__logo {
+      margin-bottom: 60px;
+    }
+    &__title {
+      font-size: 42px;
+      padding: 0 60px;
+      margin-bottom: 100px;
+      &::before {
+        top: 30px;
+        right: 103px;
+        background-size: 50%;
+      }
+    }
+  } 
+  .greetings {
+    &__container {
+      width: 440px;
+    }
+    &__title {
+      font-size: 42px;
+      line-height: 28px;
+      padding-top: 80px;
+      margin-bottom: 50px;
+    }
+    &__text-primary {
+      font-size: 28px;
+      line-height: 36px;
+      margin-bottom: 35px;
+    }
+    &__text-secondary {
+      font-size: 28px;
+      line-height: 36px;
+      margin-bottom: 35px;
+    }
+  }
+  
+  .nav {
+    &__list {
+      margin-bottom: 0px;
+    }
+    &__link {
+      width: 200px;
+      height: 66px;
+      font-size: 28px;
+      &:first-child {
+        margin-bottom: 22px;
+      }
+      &--last {
+        min-width: 220px;
+      }
+    }
+  }
+  .music {
+    &__container {
+      width: 440px;
+      margin-bottom: 40px;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
+    &__wrapper {
+      width: 440px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  
+  .headphones {
+    background-size: contain;
+    background-position: top center;
+    width: 440px;
+    height: 420px;
+    margin-bottom: 20px;
+    &__title {
+      font-size: 42px;
+      line-height: 46px;
+      padding: 0 80px;
+      padding-top: 90px;
+      padding-bottom: 10px;
+    }
+    &__text {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px;
+      opacity: 0.7;
+      padding: 0 160px;
+    }
+  }
+  
+  .polinamusic {
+    width: 440px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    &__title {
+      font-size: 42px;
+      line-height: 55px;
+      padding-top: 44px;
+      margin-bottom: 8px;
+    }
+    &__text {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 20px;
+    }
+    &__button {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 35px;
+      width: 80%;
+    }
+    &__appleicon {
+      margin-bottom: 15px;
+    }
+  }
+
+  .polinamusic__button:hover .polinamusic__hammer {
+    transform: translateX(1550%);
+  }
+  
+  .person {
+    width: 210px;
+    height: 342px;
+    &__wrapper {
+      padding: 15px;
+    }
+  }
+  
+  .podcasts {
+    &__container {
+      width: 440px;
+    }
+    margin-bottom: 30px;
+    &__title {
+      font-size: 42px;
+      line-height: 55px;
+      padding: 0 40px;
+      position: relative;
+      margin-bottom: 65px;
+      &::before {
+        background-size: 60%;
+        top: 171px;
+        left: 130px;
+      }
+    }
+  }
+  
+  .podcast {
+    margin-bottom: 20px;
+    &__wrapper {
+      padding: 40px;
+    }
+    &__top-block {
+      margin-bottom: 25px;
+      flex-direction: column;
+    }
+    &__name {
+      display: flex;
+    }
+    &__image {
+      margin-right: 35px;
+    }
+    &__title {
+      font-size: 42px;
+      line-height: 55px;
+    }
+    &__text {
+      font-size: 22px;
+      line-height: 30px;
+    }
+    &__button-block {
+      align-self: flex-end;
+      padding-right: 40px;
+    }
+  }
+  
+  .books {
+    margin-bottom: 60px;
+    &__container {
+      width: 440px;
+    }
+    &__title {
+      font-size: 42px;
+      line-height: 55px;
+      padding: 0 100px;
+      margin-bottom: 50px;
+    }
+    &__undertitle {
+      font-size: 26px;
+      line-height: 35px;
+      padding: 0 0px;
+      margin-bottom: 65px;
+      &::before {
+        background-size: 60%;
+        top: 100px;
+        left: 150px;
+      }
+    }
+  }
+  
+  .book {
+    width: 440px;
+    margin-bottom: 20px;
+    &__title {
+      font-size: 38px;
+      line-height: 55px;
+      padding-left: 20px;
+      padding-top: 10px;
+      margin-bottom: 16px;
+    }
+    &__text {
+      font-size: 22px;
+      line-height: 30px;
+      letter-spacing: 0.375px;
+      padding-left: 20px;
+      padding-bottom: 20px;
+    }
+  }
+  
+  .films {
+    &__container {
+      width: 440px;
+    }
+    &__title {
+      font-size: 42px;
+      line-height: 55px;
+      padding: 0 30px;
+      position: relative;
+      margin-bottom: 30px;
+      &::before {
+        background-size: 50%;
+        top: -30px;
+        right: 0px;
+      }
+    }
+    &__undertitle {
+      font-size: 28px;
+      line-height: 35px;
+      margin-bottom: 30px;
+      padding:0 40px;
+    }
+  }
+  
+  .film {
+    &__title-block {
+      width: 440px;
+      height: 252px;
+      margin-bottom: 15px;
+      background-size: 100%;
+    }
+    &__title {
+      font-size: 42px;
+      line-height: 55px;
+      padding-top: 34px;
+      padding-left: 40px;
+    }
+    &__time {
+      font-size: 22px;
+      line-height: 30px;
+      margin-bottom: 10px;
+    }
+    &__text {
+      font-size: 22px;
+      line-height: 30px;
+      margin-bottom: 15px;
+    }
+    &__btn {
+      margin-bottom: 40px;
+    }
+  }
+  
+  .gift {
+    margin-bottom: 60px;
+    &__container {
+      width: 440px;
+    }
+    &__wrapper {
+      background-size: 100%;
+      width: 440px;
+      height: 440px;
+    }
+    &__zoom {
+      padding-top: 20px;
+      margin-bottom: 38px;
+    }
+    &__title {
+      font-size: 42px;
+      line-height: 70px;
+      margin-bottom: 27px;
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  }
+  
+  .resume {
+    &__container {
+      width: 440px;
+    }
+    &__title {
+      font-size: 38px;
+      line-height: 45px;
+      padding: 0;
+      margin-bottom: 35px;
+      &::before {
+        background-size: 70%;
+        top: 80px;
+        left: 160px;
+      }
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 25px;
+      padding: 0 100px;
+      margin-bottom: 50px;
+    }
+    &__logo {
+      margin-bottom: 55px;
+    }
   }
 }
