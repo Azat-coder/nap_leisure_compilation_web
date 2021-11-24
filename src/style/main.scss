@@ -1489,7 +1489,7 @@ body {
   } 
   .greetings {
     &__container {
-      width: 440px;
+      width: 320px;
     }
     &__title {
       font-size: 42px;
@@ -1498,13 +1498,13 @@ body {
       margin-bottom: 50px;
     }
     &__text-primary {
-      font-size: 28px;
-      line-height: 36px;
+      font-size: 24px;
+      line-height: 32px;
       margin-bottom: 35px;
     }
     &__text-secondary {
-      font-size: 28px;
-      line-height: 36px;
+      font-size: 24px;
+      line-height: 32px;
       margin-bottom: 35px;
     }
   }
@@ -1527,7 +1527,7 @@ body {
   }
   .music {
     &__container {
-      width: 440px;
+      width: 320px;
       margin-bottom: 40px;
     }
     display: flex;
@@ -1535,7 +1535,7 @@ body {
     align-items: center;
     margin-bottom: 0px;
     &__wrapper {
-      width: 440px;
+      width: 320px;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
@@ -1545,13 +1545,13 @@ body {
   .headphones {
     background-size: contain;
     background-position: top center;
-    width: 440px;
-    height: 420px;
-    margin-bottom: 20px;
+    width: 320px;
+    height: 320px;
+    margin-bottom: 0px;
     &__title {
-      font-size: 42px;
-      line-height: 46px;
-      padding: 0 80px;
+      font-size: 35px;
+      line-height: 40px;
+      padding: 0 40px;
       padding-top: 90px;
       padding-bottom: 10px;
     }
@@ -1561,18 +1561,19 @@ body {
       font-size: 18px;
       line-height: 25px;
       opacity: 0.7;
-      padding: 0 160px;
+      padding: 0 60px;
     }
   }
   
   .polinamusic {
-    width: 440px;
+    width: 320px;
     margin: 0 auto;
     margin-bottom: 20px;
+    border-radius: 10px;
     &__title {
       font-size: 42px;
       line-height: 55px;
-      padding-top: 44px;
+      padding-top: 24px;
       margin-bottom: 8px;
     }
     &__text {
@@ -1594,32 +1595,47 @@ body {
   }
 
   .polinamusic__button:hover .polinamusic__hammer {
-    transform: translateX(1550%);
+    transform: translateX(1100%);
   }
   
   .person {
-    width: 210px;
-    height: 342px;
+    width: 155px;
+    height: 254px;
     &__wrapper {
-      padding: 15px;
+      padding: 5px;
+    }
+    &__title {
+      font-size: 32px;
+      line-height: 32px;
+      margin-bottom: 8px;
+    }
+    &__text {
+      font-size: 12px;
+      line-height: 16px;
+    }
+    &__applemusic {
+      width: 50px;
+    }
+    &__play-button {
+      width: 40%;
     }
   }
   
   .podcasts {
     &__container {
-      width: 440px;
+      width: 320px;
     }
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     &__title {
       font-size: 42px;
       line-height: 55px;
-      padding: 0 40px;
+      padding: 0 10px;
       position: relative;
       margin-bottom: 65px;
       &::before {
         background-size: 60%;
-        top: 171px;
-        left: 130px;
+        top: 181px;
+        left: 50px;
       }
     }
   }
@@ -1627,78 +1643,80 @@ body {
   .podcast {
     margin-bottom: 20px;
     &__wrapper {
-      padding: 40px;
+      padding: 15px;
     }
     &__top-block {
-      margin-bottom: 25px;
+      margin-bottom: 15px;
       flex-direction: column;
     }
     &__name {
       display: flex;
     }
     &__image {
-      margin-right: 35px;
+      margin-right: 15px;
     }
     &__title {
-      font-size: 42px;
-      line-height: 55px;
+      font-size: 32px;
+      line-height: 45px;
     }
     &__text {
       font-size: 22px;
       line-height: 30px;
     }
     &__button-block {
-      align-self: flex-end;
-      padding-right: 40px;
+      align-self: flex-start;
+      padding-top: 20px;
     }
   }
   
   .books {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     &__container {
-      width: 440px;
+      width: 320px;
     }
     &__title {
       font-size: 42px;
       line-height: 55px;
-      padding: 0 100px;
-      margin-bottom: 50px;
+      padding: 0 10px;
+      margin-bottom: 30px;
     }
     &__undertitle {
       font-size: 26px;
       line-height: 35px;
       padding: 0 0px;
-      margin-bottom: 65px;
+      margin-bottom: 35px;
       &::before {
         background-size: 60%;
-        top: 100px;
-        left: 150px;
+        top: 140px;
+        left: 0px;
       }
     }
   }
   
   .book {
-    width: 440px;
+    width: 320px;
     margin-bottom: 20px;
+    border-radius: 15px;
     &__title {
-      font-size: 38px;
-      line-height: 55px;
-      padding-left: 20px;
+      font-size: 28px;
+      line-height: 35px;
+      padding-left: 10px;
       padding-top: 10px;
       margin-bottom: 16px;
     }
     &__text {
-      font-size: 22px;
-      line-height: 30px;
+      font-size: 18px;
+      line-height: 22px;
       letter-spacing: 0.375px;
-      padding-left: 20px;
-      padding-bottom: 20px;
+      padding-left: 10px;
+      padding-right: 5px;
+      padding-bottom: 10px;
     }
   }
   
   .films {
     &__container {
-      width: 440px;
+      width: 320px;
     }
     &__title {
       font-size: 42px;
@@ -1708,22 +1726,22 @@ body {
       margin-bottom: 30px;
       &::before {
         background-size: 50%;
-        top: -30px;
-        right: 0px;
+        top: 30px;
+        right: -30px;
       }
     }
     &__undertitle {
       font-size: 28px;
       line-height: 35px;
       margin-bottom: 30px;
-      padding:0 40px;
+      padding:0 10px;
     }
   }
   
   .film {
     &__title-block {
-      width: 440px;
-      height: 252px;
+      width: 320px;
+      height: 183px;
       margin-bottom: 15px;
       background-size: 100%;
     }
@@ -1749,35 +1767,36 @@ body {
   }
   
   .gift {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     &__container {
-      width: 440px;
+      width: 320px;
     }
     &__wrapper {
       background-size: 100%;
-      width: 440px;
-      height: 440px;
+      width: 320px;
+      height: 320px;
     }
     &__zoom {
       padding-top: 20px;
-      margin-bottom: 38px;
+      margin-bottom: 28px;
     }
     &__title {
       font-size: 42px;
-      line-height: 70px;
+      line-height: 42px;
       margin-bottom: 27px;
     }
     &__text {
-      font-size: 18px;
-      line-height: 25px;
+      font-size: 14px;
+      line-height: 18px;
       text-align: center;
-      margin-bottom: 40px;
+      padding: 0 15px;
+      margin-bottom: 20px;
     }
   }
   
   .resume {
     &__container {
-      width: 440px;
+      width: 320px;
     }
     &__title {
       font-size: 38px;
@@ -1786,14 +1805,14 @@ body {
       margin-bottom: 35px;
       &::before {
         background-size: 70%;
-        top: 80px;
-        left: 160px;
+        top: 170px;
+        left: 40px;
       }
     }
     &__text {
       font-size: 18px;
       line-height: 25px;
-      padding: 0 100px;
+      padding: 0 20px;
       margin-bottom: 50px;
     }
     &__logo {
