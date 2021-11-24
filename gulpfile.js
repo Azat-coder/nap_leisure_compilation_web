@@ -28,5 +28,5 @@ task('browser-sync', function() {
   });
 });
 
-task('default', series(clean, parallel(html, scss, img, webpImg, fonts, script, scriptLib, svg), parallel('watch', 'browser-sync')));
-task('build', series(clean, parallel(html, scss, img, webpImg, fonts, script, scriptLib, svg)))
+task('default', series(clean, parallel(html, scss, img, fonts, script, scriptLib, svg), parallel('watch', 'browser-sync')));
+task('build', series(clean, parallel(html, scss, img, fonts, script, scriptLib, svg)))
