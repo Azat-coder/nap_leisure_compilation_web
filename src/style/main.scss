@@ -1470,6 +1470,10 @@ body {
 @media (max-width: 490px) {
   .container {
     width: 100%;
+    padding: 0 10px;
+  }
+  .header-container {
+    width: 100%;
   }
   .header {
     padding-top: 60px;
@@ -1587,6 +1591,9 @@ body {
     }
     &__appleicon {
       margin-bottom: 15px;
+    }
+    &__link {
+      text-align: center;
     }
   }
 
