@@ -1466,3 +1466,338 @@ body {
     }
   }
 }
+
+@media (max-width: 520px) {
+  .container {
+    width: 100%;
+  }
+  .header {
+    padding-top: 60px;
+    &__logo {
+      margin-bottom: 60px;
+    }
+    &__title {
+      font-size: 42px;
+      padding: 0px;
+      margin-bottom: 100px;
+      &::before {
+        top: 60px;
+        right: 103px;
+        background-size: 50%;
+      }
+    }
+  } 
+  .greetings {
+    &__container {
+      width: 440px;
+    }
+    &__title {
+      font-size: 42px;
+      line-height: 28px;
+      padding-top: 80px;
+      margin-bottom: 50px;
+    }
+    &__text-primary {
+      font-size: 28px;
+      line-height: 36px;
+      margin-bottom: 35px;
+    }
+    &__text-secondary {
+      font-size: 28px;
+      line-height: 36px;
+      margin-bottom: 35px;
+    }
+  }
+  
+  .nav {
+    &__list {
+      margin-bottom: 0px;
+    }
+    &__link {
+      width: 200px;
+      height: 66px;
+      font-size: 28px;
+      &:first-child {
+        margin-bottom: 22px;
+      }
+      &--last {
+        min-width: 220px;
+      }
+    }
+  }
+  .music {
+    &__container {
+      width: 440px;
+      margin-bottom: 40px;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
+    &__wrapper {
+      width: 440px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  
+  .headphones {
+    background-size: contain;
+    background-position: top center;
+    width: 440px;
+    height: 420px;
+    margin-bottom: 20px;
+    &__title {
+      font-size: 42px;
+      line-height: 46px;
+      padding: 0 80px;
+      padding-top: 90px;
+      padding-bottom: 10px;
+    }
+    &__text {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px;
+      opacity: 0.7;
+      padding: 0 160px;
+    }
+  }
+  
+  .polinamusic {
+    width: 440px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    &__title {
+      font-size: 42px;
+      line-height: 55px;
+      padding-top: 44px;
+      margin-bottom: 8px;
+    }
+    &__text {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 20px;
+    }
+    &__button {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 35px;
+      width: 80%;
+    }
+    &__appleicon {
+      margin-bottom: 15px;
+    }
+  }
+
+  .polinamusic__button:hover .polinamusic__hammer {
+    transform: translateX(1550%);
+  }
+  
+  .person {
+    width: 210px;
+    height: 342px;
+    &__wrapper {
+      padding: 15px;
+    }
+  }
+  
+  .podcasts {
+    &__container {
+      width: 440px;
+    }
+    margin-bottom: 30px;
+    &__title {
+      font-size: 42px;
+      line-height: 55px;
+      padding: 0 40px;
+      position: relative;
+      margin-bottom: 65px;
+      &::before {
+        background-size: 60%;
+        top: 171px;
+        left: 130px;
+      }
+    }
+  }
+  
+  .podcast {
+    margin-bottom: 20px;
+    &__wrapper {
+      padding: 40px;
+    }
+    &__top-block {
+      margin-bottom: 25px;
+      flex-direction: column;
+    }
+    &__name {
+      display: flex;
+    }
+    &__image {
+      margin-right: 35px;
+    }
+    &__title {
+      font-size: 42px;
+      line-height: 55px;
+    }
+    &__text {
+      font-size: 22px;
+      line-height: 30px;
+    }
+    &__button-block {
+      align-self: flex-end;
+      padding-right: 40px;
+    }
+  }
+  
+  .books {
+    margin-bottom: 60px;
+    &__container {
+      width: 440px;
+    }
+    &__title {
+      font-size: 42px;
+      line-height: 55px;
+      padding: 0 100px;
+      margin-bottom: 50px;
+    }
+    &__undertitle {
+      font-size: 26px;
+      line-height: 35px;
+      padding: 0 0px;
+      margin-bottom: 65px;
+      &::before {
+        background-size: 60%;
+        top: 100px;
+        left: 150px;
+      }
+    }
+  }
+  
+  .book {
+    width: 440px;
+    margin-bottom: 20px;
+    &__title {
+      font-size: 38px;
+      line-height: 55px;
+      padding-left: 20px;
+      padding-top: 10px;
+      margin-bottom: 16px;
+    }
+    &__text {
+      font-size: 22px;
+      line-height: 30px;
+      letter-spacing: 0.375px;
+      padding-left: 20px;
+      padding-bottom: 20px;
+    }
+  }
+  
+  .films {
+    &__container {
+      width: 440px;
+    }
+    &__title {
+      font-size: 42px;
+      line-height: 55px;
+      padding: 0 30px;
+      position: relative;
+      margin-bottom: 30px;
+      &::before {
+        background-size: 50%;
+        top: -30px;
+        right: 0px;
+      }
+    }
+    &__undertitle {
+      font-size: 28px;
+      line-height: 35px;
+      margin-bottom: 30px;
+      padding:0 40px;
+    }
+  }
+  
+  .film {
+    &__title-block {
+      width: 440px;
+      height: 252px;
+      margin-bottom: 15px;
+      background-size: 100%;
+    }
+    &__title {
+      font-size: 42px;
+      line-height: 55px;
+      padding-top: 14px;
+      padding-left: 20px;
+    }
+    &__time {
+      font-size: 22px;
+      line-height: 30px;
+      margin-bottom: 10px;
+    }
+    &__text {
+      font-size: 22px;
+      line-height: 30px;
+      margin-bottom: 15px;
+    }
+    &__btn {
+      margin-bottom: 40px;
+    }
+  }
+  
+  .gift {
+    margin-bottom: 60px;
+    &__container {
+      width: 440px;
+    }
+    &__wrapper {
+      background-size: 100%;
+      width: 440px;
+      height: 440px;
+    }
+    &__zoom {
+      padding-top: 20px;
+      margin-bottom: 38px;
+    }
+    &__title {
+      font-size: 42px;
+      line-height: 70px;
+      margin-bottom: 27px;
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  }
+  
+  .resume {
+    &__container {
+      width: 440px;
+    }
+    &__title {
+      font-size: 38px;
+      line-height: 45px;
+      padding: 0;
+      margin-bottom: 35px;
+      &::before {
+        background-size: 70%;
+        top: 80px;
+        left: 160px;
+      }
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 25px;
+      padding: 0 100px;
+      margin-bottom: 50px;
+    }
+    &__logo {
+      margin-bottom: 55px;
+    }
+  }
+}
