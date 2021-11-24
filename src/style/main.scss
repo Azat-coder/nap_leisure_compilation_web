@@ -1469,7 +1469,7 @@ body {
 
 @media (max-width: 490px) {
   .container {
-    width: 100%;
+    width: 360px;
   }
   .header {
     padding-top: 60px;
@@ -1527,7 +1527,7 @@ body {
   }
   .music {
     &__container {
-      width: 320px;
+      width: 360px;
       margin-bottom: 40px;
     }
     display: flex;
@@ -1535,7 +1535,7 @@ body {
     align-items: center;
     margin-bottom: 0px;
     &__wrapper {
-      width: 320px;
+      width: 360px;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
@@ -1545,8 +1545,8 @@ body {
   .headphones {
     background-size: contain;
     background-position: top center;
-    width: 320px;
-    height: 320px;
+    width: 360px;
+    height: 360px;
     margin-bottom: 0px;
     &__title {
       font-size: 35px;
@@ -1566,9 +1566,9 @@ body {
   }
   
   .polinamusic {
-    width: 320px;
+    width: 360px;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border-radius: 10px;
     &__title {
       font-size: 42px;
@@ -1599,8 +1599,8 @@ body {
   }
   
   .person {
-    width: 155px;
-    height: 254px;
+    width: 175px;
+    height: 285px;
     &__wrapper {
       padding: 5px;
     }
@@ -1623,7 +1623,7 @@ body {
   
   .podcasts {
     &__container {
-      width: 320px;
+      width: 360px;
     }
     margin-bottom: 20px;
     &__title {
@@ -1672,7 +1672,7 @@ body {
   .books {
     margin-bottom: 30px;
     &__container {
-      width: 320px;
+      width: 360px;
     }
     &__title {
       font-size: 42px;
@@ -1694,7 +1694,7 @@ body {
   }
   
   .book {
-    width: 320px;
+    width: 360px;
     margin-bottom: 20px;
     border-radius: 15px;
     &__title {
@@ -1716,7 +1716,7 @@ body {
   
   .films {
     &__container {
-      width: 320px;
+      width: 360px;
     }
     &__title {
       font-size: 42px;
@@ -1740,8 +1740,8 @@ body {
   
   .film {
     &__title-block {
-      width: 320px;
-      height: 183px;
+      width: 360px;
+      height: 207px;
       margin-bottom: 15px;
       background-size: 100%;
     }
@@ -1769,25 +1769,25 @@ body {
   .gift {
     margin-bottom: 30px;
     &__container {
-      width: 320px;
+      width: 360px;
     }
     &__wrapper {
       background-size: 100%;
-      width: 320px;
-      height: 320px;
+      width: 360px;
+      height: 360px;
     }
     &__zoom {
       padding-top: 20px;
       margin-bottom: 28px;
     }
     &__title {
-      font-size: 42px;
-      line-height: 42px;
+      font-size: 55px;
+      line-height: 65px;
       margin-bottom: 27px;
     }
     &__text {
-      font-size: 14px;
-      line-height: 18px;
+      font-size: 18px;
+      line-height: 22px;
       text-align: center;
       padding: 0 15px;
       margin-bottom: 20px;
