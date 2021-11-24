@@ -6,6 +6,10 @@ $main-background: #ffffff;
 
 $manrope: 'Manrope', sans-serif, Arial;
 
+* {
+  box-sizing: border-box;
+}
+
 body,
 h1,
 h2,
@@ -78,6 +82,11 @@ body {
 }
 
 .container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.header-container {
   width: 900px;
   margin: 0 auto;
 }
@@ -782,6 +791,10 @@ body {
 }
 
 @media (max-width: 900px) {
+  .header-container {
+    width: 740px;
+    margin: 0 auto;
+  }
   .container {
     width: 740px;
     margin: 0 auto;
@@ -1133,6 +1146,9 @@ body {
 }
 
 @media (max-width: 770px) {
+  .header-container {
+    width: 480px;
+  }
   .container {
     width: 480px;
   }
