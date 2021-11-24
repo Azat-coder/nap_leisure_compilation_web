@@ -557,6 +557,7 @@ body {
   &__container {
     width: 793px;
     margin: 0 auto;
+    overflow: hidden;
   }
   &__title {
     font-style: normal;
@@ -601,6 +602,7 @@ body {
     width: 793px;
     height: 455px;
     margin-bottom: 45px;
+    overflow: hidden;
   }
   &__title-block--1 {
     background: url('../img/film_background_1.png');
@@ -1497,7 +1499,7 @@ body {
 @media (max-width: 490px) {
   .container {
     width: 100%;
-    // padding: 0 10px;
+    padding: 0 10px;
   }
   .header-container {
     width: 100%;
@@ -1633,7 +1635,7 @@ body {
     width: 175px;
     height: 285px;
     &__wrapper {
-      padding: 5px;
+      padding: 10px;
     }
     &__title {
       font-size: 32px;
