@@ -99,7 +99,7 @@
           >
         </div>
         <div class="music__wrapper">
-          <div class="person revealator-slideright">
+          <div class="person revealator-slideright revealator-once">
             <div class="person__wrapper">
               <div class="person__top-block">
                 <h3 class="person__title">Аркадий</h3>
@@ -123,7 +123,7 @@
               </div>
             </div>
           </div>
-          <div class="person revealator-slideleft">
+          <div class="person revealator-slideleft revealator-once">
             <div class="person__wrapper">
               <div class="person__top-block">
                 <h3 class="person__title">Сергей</h3>
@@ -153,7 +153,7 @@
     <section class="podcasts">
       <div class="podcasts__container">
         <h2 class="podcasts__title">Подкасты о&nbsp;персонажах и&nbsp;технологиях в&nbsp;области IT</h2>
-        <div class="podcasts__item podcast revealator-zoomin">
+        <div class="podcasts__item podcast revealator-zoomin revealator-once">
           <div class="podcast__wrapper">
             <div class="podcast__top-block">
               <div class="podcast__name">
@@ -200,7 +200,7 @@
             </div>
           </div>
         </div>
-        <div class="podcast__item podcast revealator-zoomin">
+        <div class="podcast__item podcast revealator-zoomin revealator-once">
           <div class="podcast__wrapper">
             <div class="podcast__top-block">
               <div class="podcast__name">
@@ -247,7 +247,7 @@
             </div>
           </div>
         </div>
-        <div class="podcast__item podcast revealator-zoomin">
+        <div class="podcast__item podcast revealator-zoomin revealator-once">
           <div class="podcast__wrapper">
             <div class="podcast__top-block">
               <div class="podcast__name">
@@ -303,7 +303,7 @@
         <p class="books__undertitle">
           Ты&nbsp;почерпнешь много нового о&nbsp;командной работе и&nbsp;повышении её эффективности.
         </p>
-        <div class="books__item book book--first revealator-zoomin">
+        <div class="books__item book book--first revealator-zoomin revealator-once">
           <img 
             class="book__image" 
             src="./img/book-table_1_image.png" 
@@ -314,7 +314,7 @@
             Источник принципов методологической школы управления&nbsp;&mdash; глубокая теоретическая и&nbsp;онтологическая проработка оргуправленческого мышления.
           </p>
         </div>
-        <div class="books__item book book--second revealator-zoomin">
+        <div class="books__item book book--second revealator-zoomin revealator-once">
           <img 
             class="book__image" 
             src="./img/book-table_2_image.png" 
@@ -326,7 +326,7 @@
             Цель этой книги&nbsp;&mdash; дать понять, как работают <nobr>Agile-команды</nobr>. В&nbsp;ней нет кейсов, простых решений и&nbsp;банальных советов. Чего в&nbsp;ней в&nbsp;избытке, так это интересных идей, экспериментов и&nbsp;поводов для размышления.
           </p>
         </div>
-        <div class="books__item book book--third revealator-zoomin">
+        <div class="books__item book book--third revealator-zoomin revealator-once">
           <img 
             class="book__image" 
             src="./img/book-table_3_image.png" 
@@ -343,7 +343,7 @@
       <div class="films__container">
         <h2 class="films__title">Наши любимые фильмы</h2>
         <p class="films__undertitle">Фильмы о&nbsp;технологиях, программировании, AI&nbsp;и&nbsp;роботах.</p>
-        <div class="films__item film revealator-slideright">
+        <div class="films__item film revealator-slideright revealator-once">
           <div class="film__title-block film__title-block--1">
             <h3 class="film__title">Игра <br /> в имитацию</h3>
           </div>
@@ -359,7 +359,7 @@
             Смотреть
           </a>
         </div>
-        <div class="films__item film revealator-slideleft">
+        <div class="films__item film revealator-slideleft revealator-once">
           <div class="film__title-block film__title-block--2">
             <h3 class="film__title">Джобс: Империя <br /> соблазна</h3>
           </div>
@@ -375,7 +375,7 @@
             Смотреть
           </a>
         </div>
-        <div class="films__item film revealator-slideright">
+        <div class="films__item film revealator-slideright revealator-once">
           <div class="film__title-block film__title-block--3">
             <h3 class="film__title"></h3>
           </div>
@@ -391,7 +391,7 @@
             Смотреть
           </a>
         </div>
-        <div class="films__item film revealator-slideleft">
+        <div class="films__item film revealator-slideleft revealator-once">
           <div class="film__title-block film__title-block--4">
             <h3 class="film__title">Социальная <br /> сеть</h3>
           </div>
@@ -407,7 +407,7 @@
             Смотреть
           </a>
         </div>
-        <div class="films__item film revealator-slideright">
+        <div class="films__item film revealator-slideright revealator-once">
           <div class="film__title-block film__title-block--5">
             <h3 class="film__title">Робот по <br /> имени Чаппи</h3>
           </div>
@@ -425,7 +425,7 @@
         </div>
       </div>
     </section>
-    <section class="gift revealator-fade">
+    <section class="gift revealator-fade revealator-once">
       <div class="gift__container">
         <div class="gift__wrapper">
           <img 
@@ -484,7 +484,7 @@
         timer:           null,
         busy:            false,
         scroll_padding:  0,
-        effects_padding: 0,
+        effects_padding: -350,
         refresh:         function () {}
       }, typeof Revealator !== 'undefined' ? Revealator : {});
 

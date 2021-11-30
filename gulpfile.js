@@ -4,7 +4,7 @@ const browserSync = require('browser-sync').create();
 const html = require('./gulp/html');
 const scss = require('./gulp/scss');
 const img = require('./gulp/img');
-const webpImg = require('./gulp/webpImg');
+// const webpImg = require('./gulp/webpImg');
 const fonts = require('./gulp/fonts');
 const script = require('./gulp/script');
 const scriptLib = require('./gulp/scriptLib');
@@ -15,7 +15,7 @@ task('watch', () => {
   watch('src/**.html', series(html)).on('change', browserSync.reload);
   watch('src/style/**/*.scss', series(scss)).on('change', browserSync.reload);
   watch('src/img/**/*.{jpg,png}', series(img)).on('change', browserSync.reload);
-  watch('src/img/**/*.{jpg,png}', series(webpImg)).on('change', browserSync.reload);
+  // watch('src/img/**/*.{jpg,png}', series(webpImg)).on('change', browserSync.reload);
   watch('src/fonts/*', series(fonts)).on('change', browserSync.reload);
   watch('src/script/*.js', series(script)).on('change', browserSync.reload);
   watch('src/img/svg/*.svg', series(svg)).on('change', browserSync.reload);
